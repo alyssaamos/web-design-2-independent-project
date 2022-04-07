@@ -1,0 +1,15 @@
+html {
+  box-sizing: border-box;
+  font: normal 100% montserrat, sans-serif;
+  background: #fef9f1;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
