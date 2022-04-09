@@ -19,30 +19,21 @@ header, ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
-nav{
-  width:100%;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
 }
 
 ul{
-  display: table;
-  margin: 0 auto;
+  display: flex;
 }
 
 li a {
   color: #666;
-}
-
-li {
-  margin: 0 auto;
-}
-
-ul li {
-  float: right;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 li a {
@@ -58,6 +49,94 @@ li a:hover {
   background-color: #ADC7A0;
 }
 
-.logo{
-  float:left;
+/*main {
+  padding: 1rem 1.5rem;*/
 }
+
+h1 {
+
+}
+
+.intro {
+  text-align: center;
+  display: block;
+  background: #15350C;
+  background-image: url("../images/banner-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.intro h1 {
+  font-family: montserrat;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #fff;
+  padding-top: 2.8rem;
+  line-height: 3rem;
+}
+
+.intro h2 {
+  font-family: montserrat light;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+
+/* END INDEX CONTENT */
+
+.plantpage1 {
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  background: #15350C;
+  background-image: url("../images/greenhouse-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-top: 4.5rem;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.plantpage1 h1 {
+  font-family: montserrat;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+
+/* END MONSTERA PAGE CONTENT */
+
+.pest-banner {
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  background: #15350C;
+  background-image: url("../images/greenhouse-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-top: 4.5rem;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.pest-banner h1 {
+  font-family: montserrat;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+/* END PEST CONTENT */
