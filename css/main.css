@@ -1,7 +1,11 @@
 html {
   box-sizing: border-box;
   font: normal 100% montserrat, sans-serif;
-  background: #fef9f1;
+  background: #eaf1e7;/*fef9f1*/
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 *, *::before, *::after {
@@ -15,7 +19,7 @@ body {
 }
 
 header, ul {
-  background-color: #eaf1e7;
+  background-color: #fff;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -28,7 +32,7 @@ header {
   padding: 1rem 1.5rem;
 }
 
-ul{
+ul {
   display: flex;
 }
 
@@ -47,6 +51,11 @@ li a {
 
 li a:hover {
   background-color: #ADC7A0;
+}
+
+.plants li {
+  border: red; 1px;
+
 }
 
 /*main {
@@ -87,6 +96,44 @@ h1 {
   color: #fff;
 }
 
+ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  max-width: 65em;
+  margin-left: 6.5rem;
+}
+
+.plants {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 30em;
+  padding: 1em;
+  border-radius: .8em;
+  background: #fff;
+  -moz-border-radius: .8em;
+  -webkit-border-radius: .8em;
+}
+
+.plants img{
+  max-width: 15em;
+  border-radius: .8em;
+}
+
+.plants h2 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  color: #6f00e7;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 
 /* END INDEX CONTENT */
 
@@ -112,7 +159,6 @@ h1 {
   font-size: 3.5rem;
   color: #fff;
 }
-
 
 /* END MONSTERA PAGE CONTENT */
 
