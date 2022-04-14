@@ -19,7 +19,6 @@ body {
 }
 
 main {
-
 }
 
 header, ul {
@@ -60,7 +59,6 @@ li a:hover {
 }
 
 h1 {
-
 }
 
 .intro {
@@ -96,7 +94,7 @@ h1 {
 .about {
   background-color: #fff;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr 1fr;
   gap: 1em;
   margin-left: 9rem;
   margin-right: 9rem;
@@ -111,10 +109,6 @@ h1 {
   font-size: 1.5em;
 }
 
-.about p {
-  padding-right: 2em;
-}
-
 .about img {
   max-width: 25em;
   max-height: 60em;
@@ -122,6 +116,15 @@ h1 {
   margin-left: 1em;
   margin-right: 1em;
   margin-top: 1em;
+  margin-bottom: .8em;
+}
+
+.svg img {
+  max-width: 25em;
+  max-height: 25em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 4em;
   margin-bottom: .8em;
 }
 
@@ -187,10 +190,57 @@ footer nav ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 1em;
   padding-bottom: 2em;
 }
 
 /* END INDEX CONTENT */
+
+.about-monstera {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1em;
+  margin-left: 9rem;
+  margin-right: 9rem;
+  border-radius: 1em;
+  padding-right: 1rem;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+}
+
+.text {
+  font-size: .9em;
+  line-height: 1.3em;
+}
+
+.about-monstera h3 {
+  color: #85AB70;
+  font-family: montserrat semibold;
+  Font-weight: 600;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  margin-bottom: .2em;
+}
+
+.about-monstera img {
+  max-width: 40em;
+  max-height: 60em;
+  border-radius: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+  margin-bottom: .8em;
+}
+
+.description {
+  color: #15350C;
+  font-family: montserrat regular;
+  font-size: .65em;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 
 .plantpage1 {
   text-align: center;
@@ -206,7 +256,7 @@ footer nav ul {
   height: 280px;
   overflow: hidden;
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .plantpage1 h1 {
@@ -215,6 +265,33 @@ footer nav ul {
   color: #fff;
 }
 
+.variety {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 30em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: .5em;
+  border-radius: 1em;
+  background: #fff;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+}
+
+.variety img {
+  max-width: 15em;
+  border-radius: 1em;
+}
+
+.variety h2 {
+  color: #85AB70;
+  font-family: montserrat semibold;
+  Font-weight: 600;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-align: center;
+}
 /* END MONSTERA PAGE CONTENT */
 
 .pest-banner {
@@ -231,13 +308,84 @@ footer nav ul {
   height: 280px;
   overflow: hidden;
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .pest-banner h1 {
   font-family: montserrat;
   font-size: 3.5rem;
   color: #fff;
+}
+
+.about-pests {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1em;
+  margin-left: 9rem;
+  margin-right: 9rem;
+  border-radius: 1em;
+  padding-right: 2rem;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+}
+
+.about-pests h3 {
+  color: #85AB70;
+  font-family: montserrat semibold;
+  Font-weight: 600;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  margin-bottom: .2em;
+}
+
+.about-pests img {
+  max-width: 40em;
+  max-height: 60em;
+  margin-top: 1rem;
+  border-radius: 1em;
+}
+
+.pest-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 30em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: .5em;
+  border-radius: 1em;
+  background: #fff;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+}
+
+.pest-cards img {
+  max-width: 15em;
+  border-radius: 1em;
+}
+
+.pest-cards h2 {
+  color: #85AB70;
+  font-family: montserrat semibold;
+  Font-weight: 600;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.pest-cards h3 {
+  color: #85AB70;
+  font-family: montserrat;
+  text-align: center;
+  padding-top: .5em;
+  font-size: 1em;
+  line-height: .5em;
+}
+
+.pest-cards div p {
+  line-height: 1em;
+  font-size: .85em;
 }
 
 /* END PEST CONTENT */
