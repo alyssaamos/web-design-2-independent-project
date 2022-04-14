@@ -18,6 +18,10 @@ body {
   padding: 0;
 }
 
+main {
+  overflow-y: auto; /* Add vertical scrollbar */
+}
+
 header, ul {
   background-color: #fff;
   list-style-type: none;
@@ -101,6 +105,7 @@ ol {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
   max-width: 65em;
+  max-height: 85em;
   margin-left: 6.5rem;
 }
 
@@ -134,6 +139,11 @@ ol {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+
+footer {
+  background: red;
+}
+
 
 /* END INDEX CONTENT */
 
