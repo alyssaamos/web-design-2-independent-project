@@ -842,17 +842,18 @@ footer nav ul {
     margin-top: 1em;
     margin-bottom: .5em;
     padding-left: 0;
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .about p {
     margin-top: 0;
-    font-size: .7em;
+    font-size: 1.5em;
     padding-left: 0;
   }
 
   div.pz img {
-    margin-left: 2em;
+    margin-left: 4.5em;
+    max-height: 15em;
     margin-top: 5em;
   }
 
@@ -867,7 +868,7 @@ footer nav ul {
   }
 
   .plants img {
-    max-width: 19em;
+    max-width: 24em;
   }
 
   .about-pests {
@@ -884,8 +885,8 @@ footer nav ul {
   }
 
   .pest-cards img {
-    max-width: 18em;
-    max-height: 14em;
+    max-width: 24em;
+    max-height: 18em;
   }
 
   .pest-cards div p {
@@ -894,7 +895,7 @@ footer nav ul {
   }
 
   .pest-cards {
-    max-width: 22em;
+    max-width: 26em;
     justify-content: flex-start;
   }
 
@@ -945,7 +946,7 @@ footer nav ul {
   }
 
   .variety img {
-    max-width: 19em;
+    max-width: 24em;
     margin-left: .1em;
   }
 
