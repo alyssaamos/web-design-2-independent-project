@@ -951,3 +951,139 @@ footer nav ul {
   }
 
 }
+
+@media only screen and (min-width: 375px) {
+
+  header {
+    display: block;
+  }
+
+  .intro h1 {
+    font-size: 2em;
+  }
+
+  .intro h2 {
+    font-size: 1em;
+  }
+
+  .about {
+    margin: 1em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .5fr .5fr;
+  }
+
+  .about img {
+    max-width: 19.5em;
+  }
+
+  .about h3 {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .about p {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: .8em;
+    max-width: 29em;
+  }
+
+  div.pz {
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+  }
+
+  div.pz img {
+    margin-top: -.5em;
+    max-height: 10em;
+    margin-left: 6em;
+  }
+
+  ol {
+    grid-template-columns: 1fr;
+    margin: 1em;
+    padding-left: .2em;
+  }
+
+  .plants img {
+    max-width: 19.5em;
+  }
+
+  .about-pests {
+    margin: 1em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 1fr;
+  }
+
+  .about-pests img {
+    max-width: 17.3rem;
+  }
+
+  .about-pests h3 {
+    font-size: 1.2em;
+    padding-left: 1.3em;
+    padding-right: 1em;
+  }
+
+  .about-pests p {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    font-size: .8em;
+  }
+
+  .pest-banner h1 {
+    font-size: 2em;
+  }
+
+  .pest-cards img {
+    max-width: 19.5em;
+  }
+
+  .about-monstera {
+    margin: 1em;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 1fr;
+  }
+
+  .description img {
+    max-width: 19.5rem;
+  }
+
+  .plantpage1 h1 {
+    font-size: 2em;
+    padding-top: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+
+  .about-monstera h3 {
+    font-size: 1em;
+    padding-left: 1.5em;
+    padding-right: 3em;
+  }
+
+  .about-monstera p {
+    padding-left: 1em;
+    padding-right: 4em;
+    font-size: .7em;
+  }
+
+  .description p i {
+    margin-right: 1em;
+    display: block;
+  }
+
+  .text {
+    margin: 1em;
+  }
+
+  .variety img {
+    max-width: 19.5em;
+    margin-left: .1em;
+  }
+
+}
