@@ -100,7 +100,7 @@ li a:hover {
 }
 
 .about h3 {
-  color: #85ab70;
+  color: #3f652a;
   margin-bottom: .5em;
   font-family: montserrat;
   font-size: 1.5em;
@@ -384,7 +384,6 @@ footer nav ul {
 
 /* END PEST CONTENT */
 
-
 @media only screen and (min-width: 25em) {
 
   header {
@@ -599,7 +598,7 @@ footer nav ul {
   .about-pests p {
     font-size: .65em;
     margin-right: 0;
-    padding-right: 0
+    padding-right: 0;
   }
 
   div.pz img {
@@ -712,7 +711,6 @@ footer nav ul {
     margin-top: 0;
     font-size: .7em;
     padding-left: 0;
-    font-size: 1em;
   }
 
   div.pz img {
@@ -851,7 +849,6 @@ footer nav ul {
     margin-top: 0;
     font-size: .7em;
     padding-left: 0;
-    font-size: 1.4em;
   }
 
   div.pz img {
@@ -927,7 +924,7 @@ footer nav ul {
   .about-monstera h3 {
     font-size: 1.8em;
     margin-top: 1em;
-    padding-left: 0em;
+    padding-left: 0;
     padding-right: 1.5em;
   }
 
