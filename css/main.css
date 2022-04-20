@@ -29,17 +29,13 @@ header, ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 header {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-}
-
-ul {
-  display: flex;
 }
 
 li a {
@@ -86,7 +82,7 @@ li a:hover {
 }
 
 .intro h2 {
-  font-family: "montserrat light";
+  font-family: montserrat;
   font-size: 1.25rem;
   color: #fff;
 }
@@ -133,7 +129,6 @@ ol {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
-  max-width: 65em;
   margin-left: 6.5rem;
 }
 
@@ -141,7 +136,6 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 30em;
   padding-left: 1em;
   padding-right: 1em;
   padding-bottom: 1em;
@@ -198,7 +192,7 @@ footer nav ul {
 .about-monstera {
   background-color: #fff;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr .5fr;
   gap: 1em;
   margin-left: 9rem;
   margin-right: 9rem;
@@ -215,7 +209,7 @@ footer nav ul {
 
 .about-monstera h3 {
   color: #85ab70;
-  font-family: "montserrat semibold";
+  font-family: montserrat;
   font-weight: 600;
   font-size: 1.6em;
   text-transform: uppercase;
@@ -234,7 +228,7 @@ footer nav ul {
 
 .description {
   color: #15350c;
-  font-family: "montserrat regular";
+  font-family: montserrat;
   font-size: .65em;
   margin-left: 1rem;
   margin-bottom: 1rem;
@@ -285,7 +279,7 @@ footer nav ul {
 
 .variety h2 {
   color: #85ab70;
-  font-family: "montserrat semibold";
+  font-family: montserrat;
   font-weight: 600;
   font-size: 1.3em;
   text-transform: uppercase;
@@ -332,7 +326,7 @@ footer nav ul {
 
 .about-pests h3 {
   color: #85ab70;
-  font-family: "montserrat semibold";
+  font-family: montserrat;
   font-weight: 600;
   font-size: 1.6em;
   text-transform: uppercase;
@@ -367,7 +361,7 @@ footer nav ul {
 
 .pest-cards h2 {
   color: #85ab70;
-  font-family: "montserrat semibold";
+  font-family: montserrat;
   font-weight: 600;
   font-size: 1.3em;
   text-transform: uppercase;
@@ -390,11 +384,11 @@ footer nav ul {
 
 /* END PEST CONTENT */
 
+
 @media only screen and (min-width: 25em) {
 
-  header ul {
+  header {
     display: block;
-    flex-direction: column;
   }
 
   .intro h1 {
@@ -408,11 +402,11 @@ footer nav ul {
   .about {
     margin: 1em;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr .5fr;
+    grid-template-rows: 1fr .5fr .5fr;
   }
 
   .about img {
-    min-width: 22em;
+    max-width: 22em;
   }
 
   .about h3 {
@@ -436,8 +430,9 @@ footer nav ul {
   }
 
   div.pz img {
+    margin-top: -.5em;
     max-height: 10em;
-    padding-right: 1em;
+    margin-left: 6em;
   }
 
   ol {
@@ -453,7 +448,7 @@ footer nav ul {
   .about-pests {
     margin: 1em;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr .5fr .5fr;
+    grid-template-rows: .5fr 1fr;
   }
 
   .about-pests img {
@@ -461,8 +456,8 @@ footer nav ul {
   }
 
   .about-pests h3 {
-    font-size: 1em;
-    padding-left: 1em;
+    font-size: 1.2em;
+    padding-left: 1.3em;
     padding-right: 1em;
   }
 
@@ -470,7 +465,7 @@ footer nav ul {
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 2em;
-    font-size: .7em;
+    font-size: .8em;
   }
 
   .pest-banner h1 {
@@ -478,18 +473,17 @@ footer nav ul {
   }
 
   .pest-cards img {
-    max-width: 17em;
+    max-width: 22em;
   }
 
   .about-monstera {
     margin: 1em;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr .5fr .5fr;
+    grid-template-rows: .5fr 1fr;
   }
 
   .description img {
-    max-width: 17.3rem;
-    padding-right: 4em;
+    max-width: 22rem;
   }
 
   .plantpage1 h1 {
@@ -507,12 +501,12 @@ footer nav ul {
 
   .about-monstera p {
     padding-left: 1em;
-    padding-right: 4em;
+    padding-right: 1em;
     font-size: .7em;
   }
 
   .description p i {
-    margin-right: 4em;
+    margin-right: 1em;
     display: block;
   }
 
@@ -521,25 +515,36 @@ footer nav ul {
   }
 
   .variety img {
-    max-width: 15em;
+    max-width: 22em;
     margin-left: .1em;
   }
 
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 38em) {
 
-  header {
+  header, ul {
+    margin: 0;
+    padding: 0;
     display: flex;
   }
 
-  header div {
+  header {
+    justify-content: space-between;
     align-items: center;
+    padding: 1rem 1.5rem;
+  }
+
+  li a {
+    display: block;
+    padding: 14px 16px;
   }
 
   .intro h1 {
-    margin: 1em;
-    font-size: 2em;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 2.5em;
   }
 
   .intro h2 {
@@ -551,8 +556,8 @@ footer nav ul {
   }
 
   .about {
-    margin: 1em;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .about img {
@@ -561,15 +566,13 @@ footer nav ul {
 
   .about h3 {
     margin-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 0;
   }
 
   .about p {
     margin-top: 0;
-    padding-left: 1em;
-    padding-right: 1em;
-    font-size: .72em;
+    font-size: .7em;
+    padding-left: 0;
   }
 
   ol {
@@ -578,9 +581,14 @@ footer nav ul {
     padding-left: .2em;
   }
 
+  .plants {
+    width: 14.5em;
+  }
+
   .about-pests {
     margin: 1em;
-    grid-template-columns: 1fr .5fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: .5fr 1fr;
   }
 
   .about-pests h3 {
@@ -590,6 +598,13 @@ footer nav ul {
 
   .about-pests p {
     font-size: .65em;
+    margin-right: 0;
+    padding-right: 0
+  }
+
+  div.pz img {
+    margin-left: 0;
+    margin-top: 1.5em;
   }
 
   .pest-banner h1 {
@@ -608,22 +623,21 @@ footer nav ul {
   }
 
   .pest-cards {
-    max-width: 15.5em;
+    max-width: 14.5em;
     justify-content: flex-start;
   }
 
   .pest-cards h3 {
-    font-size: .95em;
+    font-size: .9em;
   }
 
   .about-monstera {
     margin: 1em;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr .5fr .5fr;
+    grid-template-rows: 1fr .5fr;
   }
 
   .description img {
-    max-width: 40em;
     margin-right: 0;
   }
 
@@ -657,7 +671,284 @@ footer nav ul {
   }
 
   .variety img {
+    max-width: 12.5em;
+    margin-left: .1em;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  li a {
+    display: block;
+    padding: 14px 16px;
+  }
+
+  .intro h1 {
+    margin: 1em;
+    font-size: 2.5em;
+  }
+
+  .intro h2 {
+    font-size: 1em;
+  }
+
+  .about {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .about img {
+    max-width: 30rem;
+  }
+
+  .about h3 {
+    margin-top: 1em;
+    padding-left: 0;
+    font-size: 2em;
+  }
+
+  .about p {
+    margin-top: 0;
+    font-size: .7em;
+    padding-left: 0;
+    font-size: 1em;
+  }
+
+  div.pz img {
+    margin-left: 2em;
+    margin-top: 5em;
+  }
+
+  ol {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 1em;
+    padding-left: .2em;
+  }
+
+  .plants {
+    width: auto;
+  }
+
+  .plants img {
+    max-width: 15em;
+  }
+
+  .about-pests {
+    margin: 1em;
+  }
+
+  .about-pests h3 {
+    font-size: 1.5em;
+    padding-right: 1em;
+  }
+
+  .about-pests p {
+    font-size: 1em;
+  }
+
+  .pest-banner h1 {
+    margin: 1.8em;
+    font-size: 2em;
+  }
+
+  .pest-cards img {
+    max-width: 16em;
+    max-height: 10em;
+  }
+
+  .pest-cards div p {
+    line-height: 1em;
+    font-size: .7em;
+  }
+
+  .pest-cards {
+    max-width: 17.5em;
+    justify-content: flex-start;
+  }
+
+  .pest-cards h3 {
+    font-size: .95em;
+  }
+
+  .about-monstera {
+    margin: 1em;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .description img {
+    max-width: 40em;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .plantpage1 h1 {
+    font-size: 2em;
+    padding-top: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+
+  .about-monstera h3 {
+    font-size: 1em;
+    margin-top: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  .about-monstera p {
+    padding-left: 1em;
+    padding-right: 4em;
+    font-size: .7em;
+  }
+
+  .description p i {
+    margin-right: 3em;
+    display: block;
+  }
+
+  .text {
+    margin: 1em;
+  }
+
+  .variety img {
     max-width: 13.2em;
+    margin-left: .1em;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  li a {
+    display: block;
+    padding: 14px 16px;
+  }
+
+  .intro h1 {
+    margin: 1em;
+    font-size: 2.5em;
+  }
+
+  .intro h2 {
+    font-size: 1.5em;
+  }
+
+  .about {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .about h3 {
+    margin-top: 1em;
+    margin-bottom: .5em;
+    padding-left: 0;
+    font-size: 2em;
+  }
+
+  .about p {
+    margin-top: 0;
+    font-size: .7em;
+    padding-left: 0;
+    font-size: 1.4em;
+  }
+
+  div.pz img {
+    margin-left: 2em;
+    margin-top: 5em;
+  }
+
+  ol {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 1em;
+    padding-left: .2em;
+  }
+
+  .plants {
+    width: auto;
+  }
+
+  .plants img {
+    max-width: 19em;
+  }
+
+  .about-pests {
+    margin: 1em;
+  }
+
+  .about-pests h3 {
+    font-size: 2em;
+    padding-right: 1em;
+  }
+
+  .about-pests p {
+    font-size: 1.1em;
+  }
+
+  .pest-cards img {
+    max-width: 18em;
+    max-height: 14em;
+  }
+
+  .pest-cards div p {
+    line-height: 1em;
+    font-size: 1em;
+  }
+
+  .pest-cards {
+    max-width: 22em;
+    justify-content: flex-start;
+  }
+
+  .pest-cards h3 {
+    font-size: 1.2em;
+  }
+
+  .about-monstera {
+    margin: 1em;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .description img {
+    max-width: 40em;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .plantpage1 h1 {
+    font-size: 2em;
+    padding-top: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+
+  .about-monstera h3 {
+    font-size: 1.8em;
+    margin-top: 1em;
+    padding-left: 0em;
+    padding-right: 1.5em;
+  }
+
+  .about-monstera p {
+    padding-left: 0;
+    padding-right: 4em;
+    font-size: .79em;
+    margin-left: 0;
+  }
+
+  .description p i {
+    margin-right: 3em;
+    display: block;
+  }
+
+  .text {
+    margin: 1em;
+  }
+
+  .variety img {
+    max-width: 19em;
     margin-left: .1em;
   }
 
