@@ -1,7 +1,13 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
 html {
   box-sizing: border-box;
   font: normal 100% montserrat, sans-serif;
-  background: #eaf1e7;/*fef9f1*/
+  background: #eaf1e7;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -16,9 +22,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-}
-
-main {
 }
 
 header, ul {
@@ -41,7 +44,7 @@ ul {
 
 li a {
   display: block;
-  color: #15350C;
+  color: #15350c;
   text-align: center;
   padding: 14px 16px;
   text-transform: uppercase;
@@ -58,13 +61,10 @@ li a:hover {
   background-color: #d2eaff;
 }
 
-h1 {
-}
-
 .intro {
   text-align: center;
   display: block;
-  background: #15350C;
+  background: #15350c;
   background-image: url("../images/banner-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -86,7 +86,7 @@ h1 {
 }
 
 .intro h2 {
-  font-family: montserrat light;
+  font-family: "montserrat light";
   font-size: 1.25rem;
   color: #fff;
 }
@@ -104,8 +104,9 @@ h1 {
 }
 
 .about h3 {
-  color: #85AB70;
-  font-family: montserrat regular;
+  color: #85ab70;
+  margin-bottom: .5em;
+  font-family: montserrat;
   font-size: 1.5em;
 }
 
@@ -152,15 +153,14 @@ ol {
 
 .plants img {
   max-width: 15em;
-  max-height: 20em;
   border-radius: 1em;
   margin-bottom: 1em;
 }
 
 .plants h2 {
   margin-bottom: 1em;
-  color: #85AB70;
-  font-family: montserrat regular;
+  color: #85ab70;
+  font-family: "montserrat regular";
   text-align: center;
   font-size: 1.5em;
 }
@@ -171,18 +171,17 @@ footer a {
 
 footer {
   display: flex;
-  background: #FEF9F1;
+  background: #fef9f1;
   padding: 1em;
   flex-direction: column;
   text-align: center;
   gap: .5rem;
-  text-align: center;
   text-transform: uppercase;
 }
 
 footer nav ul {
   margin: 1em;
-  background: #FEF9F1;
+  background: #fef9f1;
   justify-content: center;
 }
 
@@ -210,14 +209,14 @@ footer nav ul {
 }
 
 .text {
-  font-size: .9em;
+  font-size: .82em;
   line-height: 1.3em;
 }
 
 .about-monstera h3 {
-  color: #85AB70;
-  font-family: montserrat semibold;
-  Font-weight: 600;
+  color: #85ab70;
+  font-family: "montserrat semibold";
+  font-weight: 600;
   font-size: 1.6em;
   text-transform: uppercase;
   margin-bottom: .2em;
@@ -234,8 +233,8 @@ footer nav ul {
 }
 
 .description {
-  color: #15350C;
-  font-family: montserrat regular;
+  color: #15350c;
+  font-family: "montserrat regular";
   font-size: .65em;
   margin-left: 1rem;
   margin-bottom: 1rem;
@@ -246,7 +245,7 @@ footer nav ul {
   text-align: center;
   text-transform: uppercase;
   display: block;
-  background: #15350C;
+  background: #15350c;
   background-image: url("../images/greenhouse-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -285,20 +284,21 @@ footer nav ul {
 }
 
 .variety h2 {
-  color: #85AB70;
-  font-family: montserrat semibold;
-  Font-weight: 600;
+  color: #85ab70;
+  font-family: "montserrat semibold";
+  font-weight: 600;
   font-size: 1.3em;
   text-transform: uppercase;
   text-align: center;
 }
+
 /* END MONSTERA PAGE CONTENT */
 
 .pest-banner {
   text-align: center;
   text-transform: uppercase;
   display: block;
-  background: #15350C;
+  background: #15350c;
   background-image: url("../images/greenhouse-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -331,9 +331,9 @@ footer nav ul {
 }
 
 .about-pests h3 {
-  color: #85AB70;
-  font-family: montserrat semibold;
-  Font-weight: 600;
+  color: #85ab70;
+  font-family: "montserrat semibold";
+  font-weight: 600;
   font-size: 1.6em;
   text-transform: uppercase;
   margin-bottom: .2em;
@@ -366,16 +366,16 @@ footer nav ul {
 }
 
 .pest-cards h2 {
-  color: #85AB70;
-  font-family: montserrat semibold;
-  Font-weight: 600;
+  color: #85ab70;
+  font-family: "montserrat semibold";
+  font-weight: 600;
   font-size: 1.3em;
   text-transform: uppercase;
   text-align: center;
 }
 
 .pest-cards h3 {
-  color: #85AB70;
+  color: #85ab70;
   font-family: montserrat;
   text-align: center;
   padding-top: .5em;
@@ -389,3 +389,276 @@ footer nav ul {
 }
 
 /* END PEST CONTENT */
+
+@media only screen and (min-width: 25em) {
+
+  header ul {
+    display: block;
+    flex-direction: column;
+  }
+
+  .intro h1 {
+    font-size: 2em;
+  }
+
+  .intro h2 {
+    font-size: 1em;
+  }
+
+  .about {
+    margin: 1em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr .5fr;
+  }
+
+  .about img {
+    min-width: 22em;
+  }
+
+  .about h3 {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .about p {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: .8em;
+    max-width: 29em;
+  }
+
+  div.pz {
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+  }
+
+  div.pz img {
+    max-height: 10em;
+    padding-right: 1em;
+  }
+
+  ol {
+    grid-template-columns: 1fr;
+    margin: 1em;
+    padding-left: .2em;
+  }
+
+  .plants img {
+    max-width: 22em;
+  }
+
+  .about-pests {
+    margin: 1em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .5fr .5fr;
+  }
+
+  .about-pests img {
+    max-width: 17.3rem;
+  }
+
+  .about-pests h3 {
+    font-size: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .about-pests p {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    font-size: .7em;
+  }
+
+  .pest-banner h1 {
+    font-size: 2em;
+  }
+
+  .pest-cards img {
+    max-width: 17em;
+  }
+
+  .about-monstera {
+    margin: 1em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .5fr .5fr;
+  }
+
+  .description img {
+    max-width: 17.3rem;
+    padding-right: 4em;
+  }
+
+  .plantpage1 h1 {
+    font-size: 2em;
+    padding-top: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+
+  .about-monstera h3 {
+    font-size: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  .about-monstera p {
+    padding-left: 1em;
+    padding-right: 4em;
+    font-size: .7em;
+  }
+
+  .description p i {
+    margin-right: 4em;
+    display: block;
+  }
+
+  .text {
+    margin: 1em;
+  }
+
+  .variety img {
+    max-width: 15em;
+    margin-left: .1em;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  header {
+    display: flex;
+  }
+
+  header div {
+    align-items: center;
+  }
+
+  .intro h1 {
+    margin: 1em;
+    font-size: 2em;
+  }
+
+  .intro h2 {
+    font-size: 1em;
+  }
+
+  .plants img {
+    max-width: 13em;
+  }
+
+  .about {
+    margin: 1em;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .about img {
+    max-width: 17.3rem;
+  }
+
+  .about h3 {
+    margin-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .about p {
+    margin-top: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: .72em;
+  }
+
+  ol {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1em;
+    padding-left: .2em;
+  }
+
+  .about-pests {
+    margin: 1em;
+    grid-template-columns: 1fr .5fr;
+  }
+
+  .about-pests h3 {
+    font-size: 1em;
+    padding-right: 1em;
+  }
+
+  .about-pests p {
+    font-size: .65em;
+  }
+
+  .pest-banner h1 {
+    margin: 1.8em;
+    font-size: 2em;
+  }
+
+  .pest-cards img {
+    max-width: 12.8em;
+    max-height: 9em;
+  }
+
+  .pest-cards div p {
+    line-height: 1em;
+    font-size: .7em;
+  }
+
+  .pest-cards {
+    max-width: 15.5em;
+    justify-content: flex-start;
+  }
+
+  .pest-cards h3 {
+    font-size: .95em;
+  }
+
+  .about-monstera {
+    margin: 1em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .5fr .5fr;
+  }
+
+  .description img {
+    max-width: 40em;
+    margin-right: 0;
+  }
+
+  .plantpage1 h1 {
+    font-size: 2em;
+    padding-top: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+
+  .about-monstera h3 {
+    font-size: 1em;
+    margin-top: 0;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  .about-monstera p {
+    padding-left: 1em;
+    padding-right: 4em;
+    font-size: .7em;
+  }
+
+  .description p i {
+    margin-right: 3em;
+    display: block;
+  }
+
+  .text {
+    margin: 1em;
+  }
+
+  .variety img {
+    max-width: 13.2em;
+    margin-left: .1em;
+  }
+
+}
